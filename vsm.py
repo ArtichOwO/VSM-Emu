@@ -13,7 +13,7 @@ class VSM:
     # Counter
     for clk in self.progmem.mem_content:
       self.registers.main_reg = clk
-      self.write_bus(self.registers.main_reg[4:])
+      self.registers.enable_instr()
       self.registers.accb = self.internal_bus
       self.micro_instr.exec_instr(self.registers.main_reg)
 
