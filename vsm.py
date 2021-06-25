@@ -86,7 +86,7 @@ class VSM:
       self.acca = self.VSM.internal_bus
 
     def enable_instr(self):
-      self.VSM.write_bus(main_reg[:4])
+      self.VSM.write_bus(self.main_reg[:4])
 
 
   class ALU:
